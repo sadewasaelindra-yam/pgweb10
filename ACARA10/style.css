@@ -1,0 +1,197 @@
+/* RESET & ATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* WADAH UTAMA PROJEK */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER HALAMAN */
+h2 {
+    text-align: center;
+    color: #1a252f;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* STYLING PETA LEAFLET */
+#map {
+    height: 480px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    border: 1px solid #e0e0e0;
+}
+
+/* WADAH TABEL & TABEL DATA */
+.table-container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 14px 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #e9ecef;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* TOMBOL AKSI TABEL (EDIT & HAPUS) */
+.btn-edit,
+.btn-delete {
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-edit {
+    color: #007bff;
+    background-color: #e7f1ff;
+    border: 1px solid #b6d4fe;
+}
+
+.btn-edit:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.btn-delete {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c2c7;
+}
+
+.btn-delete:hover {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+/* TOMBOL INPUT / TAMBAH DATA */
+.btn-input {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(40, 167, 69, 0.3);
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-input:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+}
+
+/* STYLING KARTU FORMULIR (INPUT & EDIT) */
+.card-form {
+    background: #ffffff;
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+.form-group input[type="text"]:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.btn-cancel {
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268;
+}
